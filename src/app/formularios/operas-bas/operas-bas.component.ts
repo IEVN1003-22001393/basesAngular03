@@ -12,17 +12,17 @@ export class OperasBasComponent {
   resultado:number=0
   value:number=0
 
-  op():void{
-    if(this.value==1){
+  op(elegirOP:number):void{
+    if(elegirOP==1){
     this.resultado=parseInt(this.num1) + parseInt(this.num2)
     }
-      else(this.value==2);{
+      else if(elegirOP==2){
       this.resultado=parseInt(this.num1) - parseInt(this.num2)
       }
-         else(this.value==3){
+      else if(elegirOP==3){
       this.resultado=parseInt(this.num1) / parseInt(this.num2)
       }
-         if(this.value==4){
+      else if(elegirOP==4){
       this.resultado=parseInt(this.num1) * parseInt(this.num2)
       }
   }
