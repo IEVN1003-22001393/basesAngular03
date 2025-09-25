@@ -1,0 +1,76 @@
+<div class="contenedor-principal">
+  <h1>Calculadora de Resistencias</h1>
+
+  <div class="container text-center">
+    <div class="row">
+
+      <div class="col-lg-3 col-md-6">
+        <h4>1ra. Banda</h4>
+        <div class="d-flex mb-2"><input class="form-check-input" type="radio" name="primera" [value]="0" [(ngModel)]="primera" (change)="calcular()"><input type="text" class="form-control form-control-sm ms-2 negro" value="0" readonly></div>
+        <div class="d-flex mb-2"><input class="form-check-input" type="radio" name="primera" [value]="1" [(ngModel)]="primera" (change)="calcular()"><input type="text" class="form-control form-control-sm ms-2 cafe" value="1" readonly></div>
+        <div class="d-flex mb-2"><input class="form-check-input" type="radio" name="primera" [value]="2" [(ngModel)]="primera" (change)="calcular()"><input type="text" class="form-control form-control-sm ms-2 rojo" value="2" readonly></div>
+        <div class="d-flex mb-2"><input class="form-check-input" type="radio" name="primera" [value]="3" [(ngModel)]="primera" (change)="calcular()"><input type="text" class="form-control form-control-sm ms-2 naranja" value="3" readonly></div>
+        <div class="d-flex mb-2"><input class="form-check-input" type="radio" name="primera" [value]="4" [(ngModel)]="primera" (change)="calcular()"><input type="text" class="form-control form-control-sm ms-2 amarillo" value="4" readonly></div>
+        <div class="d-flex mb-2"><input class="form-check-input" type="radio" name="primera" [value]="5" [(ngModel)]="primera" (change)="calcular()"><input type="text" class="form-control form-control-sm ms-2 verde" value="5" readonly></div>
+        <div class="d-flex mb-2"><input class="form-check-input" type="radio" name="primera" [value]="6" [(ngModel)]="primera" (change)="calcular()"><input type="text" class="form-control form-control-sm ms-2 azul" value="6" readonly></div>
+        <div class="d-flex mb-2"><input class="form-check-input" type="radio" name="primera" [value]="7" [(ngModel)]="primera" (change)="calcular()"><input type="text" class="form-control form-control-sm ms-2 morado" value="7" readonly></div>
+        <div class="d-flex mb-2"><input class="form-check-input" type="radio" name="primera" [value]="8" [(ngModel)]="primera" (change)="calcular()"><input type="text" class="form-control form-control-sm ms-2 gris" value="8" readonly></div>
+        <div class="d-flex mb-2"><input class="form-check-input" type="radio" name="primera" [value]="9" [(ngModel)]="primera" (change)="calcular()"><input type="text" class="form-control form-control-sm ms-2 blanco" value="9" readonly></div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h4>2da. Banda</h4>
+        <div class="d-flex mb-2"><input class="form-check-input" type="radio" name="segunda" [value]="0" [(ngModel)]="segunda" (change)="calcular()"><input type="text" class="form-control form-control-sm ms-2 negro" value="Negro" readonly></div>
+        <div class="d-flex mb-2"><input class="form-check-input" type="radio" name="segunda" [value]="1" [(ngModel)]="segunda" (change)="calcular()"><input type="text" class="form-control form-control-sm ms-2 cafe" value="Café" readonly></div>
+        <div class="d-flex mb-2"><input class="form-check-input" type="radio" name="segunda" [value]="2" [(ngModel)]="segunda" (change)="calcular()"><input type="text" class="form-control form-control-sm ms-2 rojo" value="Rojo" readonly></div>
+        <div class="d-flex mb-2"><input class="form-check-input" type="radio" name="segunda" [value]="3" [(ngModel)]="segunda" (change)="calcular()"><input type="text" class="form-control form-control-sm ms-2 naranja" value="Naranja" readonly></div>
+        <div class="d-flex mb-2"><input class="form-check-input" type="radio" name="segunda" [value]="4" [(ngModel)]="segunda" (change)="calcular()"><input type="text" class="form-control form-control-sm ms-2 amarillo" value="Amarillo" readonly></div>
+        <div class="d-flex mb-2"><input class="form-check-input" type="radio" name="segunda" [value]="5" [(ngModel)]="segunda" (change)="calcular()"><input type="text" class="form-control form-control-sm ms-2 verde" value="Verde" readonly></div>
+        <div class="d-flex mb-2"><input class="form-check-input" type="radio" name="segunda" [value]="6" [(ngModel)]="segunda" (change)="calcular()"><input type="text" class="form-control form-control-sm ms-2 azul" value="Azul" readonly></div>
+        <div class="d-flex mb-2"><input class="form-check-input" type="radio" name="segunda" [value]="7" [(ngModel)]="segunda" (change)="calcular()"><input type="text" class="form-control form-control-sm ms-2 morado" value="Violeta" readonly></div>
+        <div class="d-flex mb-2"><input class="form-check-input" type="radio" name="segunda" [value]="8" [(ngModel)]="segunda" (change)="calcular()"><input type="text" class="form-control form-control-sm ms-2 gris" value="Gris" readonly></div>
+        <div class="d-flex mb-2"><input class="form-check-input" type="radio" name="segunda" [value]="9" [(ngModel)]="segunda" (change)="calcular()"><input type="text" class="form-control form-control-sm ms-2 blanco" value="Blanco" readonly></div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h4>Multiplicador</h4>
+        <div class="d-flex mb-2"><input class="form-check-input" type="radio" name="multiplicador" [value]="1" [(ngModel)]="multiplicador" (change)="calcular()"><input type="text" class="form-control form-control-sm ms-2 negro" value="Negro x1" readonly></div>
+        <div class="d-flex mb-2"><input class="form-check-input" type="radio" name="multiplicador" [value]="10" [(ngModel)]="multiplicador" (change)="calcular()"><input type="text" class="form-control form-control-sm ms-2 cafe" value="Café x10" readonly></div>
+        <div class="d-flex mb-2"><input class="form-check-input" type="radio" name="multiplicador" [value]="100" [(ngModel)]="multiplicador" (change)="calcular()"><input type="text" class="form-control form-control-sm ms-2 rojo" value="Rojo x100" readonly></div>
+        <div class="d-flex mb-2"><input class="form-check-input" type="radio" name="multiplicador" [value]="1000" [(ngModel)]="multiplicador" (change)="calcular()"><input type="text" class="form-control form-control-sm ms-2 naranja" value="Naranja x1k" readonly></div>
+        <div class="d-flex mb-2"><input class="form-check-input" type="radio" name="multiplicador" [value]="10000" [(ngModel)]="multiplicador" (change)="calcular()"><input type="text" class="form-control form-control-sm ms-2 amarillo" value="Amarillo x10k" readonly></div>
+        <div class="d-flex mb-2"><input class="form-check-input" type="radio" name="multiplicador" [value]="0.1" [(ngModel)]="multiplicador" (change)="calcular()"><input type="text" class="form-control form-control-sm ms-2 dorado" value="Dorado ÷10" readonly></div>
+        <div class="d-flex mb-2"><input class="form-check-input" type="radio" name="multiplicador" [value]="0.01" [(ngModel)]="multiplicador" (change)="calcular()"><input type="text" class="form-control form-control-sm ms-2 plata" value="Plata ÷100" readonly></div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h4>Tolerancia</h4>
+        <div class="d-flex mb-2"><input class="form-check-input" type="radio" name="tolerancia" [value]="0.05" [(ngModel)]="tolerancia" (change)="calcular()"><input type="text" class="form-control form-control-sm ms-2 dorado" value="Dorado ±5%" readonly></div>
+        <div class="d-flex mb-2"><input class="form-check-input" type="radio" name="tolerancia" [value]="0.10" [(ngModel)]="tolerancia" (change)="calcular()"><input type="text" class="form-control form-control-sm ms-2 plata" value="Plata ±10%" readonly></div>
+      </div>
+    </div>
+
+    <hr class="my-4">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <h2>Resultados</h2>
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th scope="row">Valor Resistencia</th>
+              <td>{{ valorOhm }}</td>
+            </tr>
+            <tr>
+              <th scope="row">Valor Máximo</th>
+              <td>{{ valorMaximo }}</td>
+            </tr>
+            <tr>
+              <th scope="row">Valor Mínimo</th>
+              <td>{{ valorMinimo }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

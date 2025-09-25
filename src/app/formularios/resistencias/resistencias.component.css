@@ -1,0 +1,41 @@
+
+.col {
+  color: #ffffff; 
+  border: 1px solid #666;
+  padding: 10px;
+  font-size: 16px;
+  cursor: default;
+  pointer-events: none;
+}
+
+
+.negro {
+  background-color: #000000; 
+}
+.cafe {
+  background-color: #612917; 
+}
+.rojo {
+  background-color: #b92a25; 
+}
+.naranja {
+  background-color: #ce730b; 
+}
+.amarillo {
+  background-color: #d4b506; 
+}
+.verde {
+  background-color: #00ff37; 
+}
+.azul {
+  background-color: #0066ff; 
+}
+.morado {
+  background-color: #7313a0; 
+}
+.gris {
+  background-color: #5c5c5c; 
+}
+.blanco {
+  background-color: #ffffff; 
+}

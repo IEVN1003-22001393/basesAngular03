@@ -1,0 +1,26 @@
+:host {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #0e5199;
+  background-size: cover;
+}
+ 
+h2, label, h1 {
+  color: white;
+}
+ 
+.form-control {
+  background-color: rgba(255, 255, 255, 0.481);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: white;
+}
+ 
+.container {
+  padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: rgba(97, 97, 97, 0.5);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 100px;
+}
