@@ -1,41 +1,52 @@
-
 .col {
-  color: #ffffff; 
+  color: #ffffff;
   border: 1px solid #666;
   padding: 10px;
   font-size: 16px;
   cursor: default;
+  text-align: center;
   pointer-events: none;
 }
-
-
+ 
+ 
 .negro {
-  background-color: #000000; 
+  background-color: #000000;
+  color: #ffffff;
 }
 .cafe {
-  background-color: #612917; 
+  background-color: #9b6724;
+  color: #ffffff;
 }
 .rojo {
-  background-color: #b92a25; 
+  background-color: #b92a25;
+  color: #ffffff;
 }
 .naranja {
-  background-color: #ce730b; 
+  background-color: #ce730b;
 }
 .amarillo {
-  background-color: #d4b506; 
+  background-color: #d4b506;
 }
 .verde {
-  background-color: #00ff37; 
+  background-color: #00ff37;
 }
 .azul {
-  background-color: #0066ff; 
+  background-color: #0066ff;
 }
 .morado {
-  background-color: #7313a0; 
+  background-color: #7313a0;
+  color: #ffffff;
 }
 .gris {
-  background-color: #5c5c5c; 
+  background-color: #5c5c5c;
+  color: #ffffff;
 }
 .blanco {
-  background-color: #ffffff; 
+  background-color: #ffffff;
+}
+.dorado {
+    background-color: gold;
+}
+.plata {
+    background-color: silver;
 }
